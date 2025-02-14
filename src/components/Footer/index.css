@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+}
+.social-icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 145px;
+  height: 21px;
+}
+.social-icon {
+  width: 16px;
+  height: 21px;
+  cursor: pointer;
+}
+.footer-heading {
+  font-family: HK Grotesk;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3d3c3c;
+}

@@ -1,0 +1,41 @@
+.home-bg {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: rgb(212, 198, 198);
+  width: 100%;
+  max-width: 100%;
+  background-size: cover;
+}
+.home-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 16px;
+}
+.title {
+  font-size: 20px;
+  color: #1e293b;
+  font-weight: 600;
+  font-family: inter;
+}
+.description {
+  color: #475569;
+  font-family: inter;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.find-book-btn {
+  width: 104px;
+  height: 36px;
+  border-radius: 4px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: #0284c7;
+}

@@ -1,0 +1,70 @@
+.label-item {
+  list-style-type: none;
+  margin-right: 12px;
+  font-size: 3cm;
+}
+
+.read-status-btn {
+  background-color: #0284c7;
+  color: #fcfdfe;
+  border: none;
+  width: 100%;
+}
+
+.read-btn {
+  border: 1px solid #0284c7;
+  color: #0284c7;
+}
+
+@media (min-width: 768px) {
+  .read-btn {
+    color: #5b45c8;
+  }
+}
+
+.btn {
+  height: 24px;
+  min-width: 100%;
+  font-family: 'inter';
+  font-weight: 500;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 25px;
+  max-width: 100%; /* Ensures the button doesn’t exceed container width */
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides overflowing text */
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-content {
+    display: none;
+  }
+}
+
+.desktop-content {
+  min-height: 100vh;
+  width: 100;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+  .desktop-content {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+.not-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.not-found-img {
+  width: 448px;
+  height: 300px;
+  top: 244px;
+  left: 496px;
+  gap: 0px;
+  opacity: 0px;
+}
+.go-back-to-home-btn {
+  background-color: #0285c7;
+  color: white;
+  font-family: Roboto;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  width: 164px;
+  height: 48px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 17px;
+}
