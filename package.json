@@ -1,5 +1,5 @@
 {
-  "homepage":"http://jayaprakashpaul7/github.io/bookstore",
+  "homepage": "http://jayaprakashpaul7/github.io/bookstore",
   "name": "bookhub",
   "private": true,
   "version": "1.0.0",
@@ -43,8 +43,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "lint": "eslint .",
     "lint:fix": "eslint --fix src/",
