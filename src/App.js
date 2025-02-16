@@ -41,7 +41,7 @@ const App = () => (
       component={Bookshelves}
     />
     <ProtectedRoute exact path="/books/:id" component={BookDetails} />
-    <Route path="/not-found" component={Notfound} />
+    <Route component={Notfound} />
   </Switch>
 )
 

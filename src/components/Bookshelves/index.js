@@ -120,70 +120,47 @@ class Bookshelves extends Component {
   )
 
   renderBooks = () => {
-    const {searchInput, booksData, label} = this.state
+    const {searchInput, booksData} = this.state
     const isbooksDataShown = booksData.length > 0
     return (
-      <div>
-        <div className="label-search-container">
-          <h1 className="status-title">{label} Books</h1>
-          <div className="desk-search-container">
-            <input
-              type="search"
-              placeholder="Search"
-              className="search-input"
-              value={searchInput}
-              onChange={this.onChangeSearchInput}
-            />
-            <button
-              testid="searchButton"
-              className="search-btn"
-              type="button"
-              onClick={this.onClickSearch}
-            >
-              <BsSearch className="search-icon" />
-            </button>
-          </div>
-        </div>
-
-        <ul className="books-ul">
-          {isbooksDataShown ? (
-            booksData.map(each => (
-              <Link to={`/books/${each.id}`} className="link" key={each.id}>
-                <li className="book-item">
-                  <div className="book-container">
-                    <img
-                      src={each.coverPic}
-                      alt={each.title}
-                      className="cover-pic"
-                    />
-                    <div className="text-container">
-                      <h1 className="book-title">{each.title}</h1>
-                      <p className="author-name">{each.authorName}</p>
-                      <p className="rating">
-                        Avg rating <BsFillStarFill /> {each.rating}
-                      </p>
-                      <p className="status">
-                        Status:
-                        <span className="book-status">{each.readStatus}</span>
-                      </p>
-                    </div>
+      <ul className="books-ul">
+        {isbooksDataShown ? (
+          booksData.map(each => (
+            <Link to={`/books/${each.id}`} className="link">
+              <li className="book-item" key={each.id}>
+                <div className="book-container">
+                  <img
+                    src={each.coverPic}
+                    alt={each.title}
+                    className="cover-pic"
+                  />
+                  <div className="text-container">
+                    <h1 className="book-title">{each.title}</h1>
+                    <p className="author-name">{each.authorName}</p>
+                    <p className="rating">
+                      Avg rating <BsFillStarFill /> {each.rating}
+                    </p>
+                    <p className="status">
+                      Status:
+                      <span className="book-status">{each.readStatus}</span>
+                    </p>
                   </div>
-                </li>
-              </Link>
-            ))
-          ) : (
-            <div className="failure-view">
-              <img
-                src="https://res.cloudinary.com/student7/image/upload/v1735955249/Asset_1_1_jop0qo.png"
-                alt="no books"
-              />
-              <p className="para">
-                Your search for {searchInput} did not find any matches.
-              </p>
-            </div>
-          )}
-        </ul>
-      </div>
+                </div>
+              </li>
+            </Link>
+          ))
+        ) : (
+          <div className="failure-view">
+            <img
+              src="https://res.cloudinary.com/student7/image/upload/v1735955249/Asset_1_1_jop0qo.png"
+              alt="no books"
+            />
+            <p className="para">
+              Your search for {searchInput} did not find any matches.
+            </p>
+          </div>
+        )}
+      </ul>
     )
   }
 
@@ -202,28 +179,31 @@ class Bookshelves extends Component {
   }
 
   render() {
-    const {searchInput, shelf} = this.state
+    const {searchInput, shelf, label} = this.state
 
     return (
       <div>
         <Header />
         <div className="bookshelves-bg">
-          <div className="mob-search-container">
-            <input
-              type="search"
-              placeholder="Search"
-              className="search-input"
-              value={searchInput}
-              onChange={this.onChangeSearchInput}
-            />
-            <button
-              testid="searchButton"
-              type="button"
-              className="search-btn"
-              onClick={this.onClickSearch}
-            >
-              <BsSearch className="search-icon" />
-            </button>
+          <div className="label-search-container">
+            <h1 className="status-title">{label} Books</h1>
+            <div className="mob-search-container">
+              <input
+                type="search"
+                placeholder="Search"
+                className="search-input"
+                value={searchInput}
+                onChange={this.onChangeSearchInput}
+              />
+              <button
+                testid="searchButton"
+                type="button"
+                className="search-btn"
+                onClick={this.onClickSearch}
+              >
+                <BsSearch className="search-icon" />
+              </button>
+            </div>
           </div>
           <div className="d-c">
             <div className="mobile-content">
