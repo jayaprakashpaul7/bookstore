@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/github.io/bookstore/static/css/main.3970a82b.chunk.css",
+    "main.js": "/github.io/bookstore/static/js/main.661129bc.chunk.js",
+    "main.js.map": "/github.io/bookstore/static/js/main.661129bc.chunk.js.map",
+    "runtime-main.js": "/github.io/bookstore/static/js/runtime-main.630bd120.js",
+    "runtime-main.js.map": "/github.io/bookstore/static/js/runtime-main.630bd120.js.map",
+    "static/css/2.856db37b.chunk.css": "/github.io/bookstore/static/css/2.856db37b.chunk.css",
+    "static/js/2.41a16499.chunk.js": "/github.io/bookstore/static/js/2.41a16499.chunk.js",
+    "static/js/2.41a16499.chunk.js.map": "/github.io/bookstore/static/js/2.41a16499.chunk.js.map",
+    "index.html": "/github.io/bookstore/index.html",
+    "static/css/2.856db37b.chunk.css.map": "/github.io/bookstore/static/css/2.856db37b.chunk.css.map",
+    "static/css/main.3970a82b.chunk.css.map": "/github.io/bookstore/static/css/main.3970a82b.chunk.css.map",
+    "static/js/2.41a16499.chunk.js.LICENSE.txt": "/github.io/bookstore/static/js/2.41a16499.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/github.io/bookstore/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.630bd120.js",
+    "static/css/2.856db37b.chunk.css",
+    "static/js/2.41a16499.chunk.js",
+    "static/css/main.3970a82b.chunk.css",
+    "static/js/main.661129bc.chunk.js"
+  ]
+}
